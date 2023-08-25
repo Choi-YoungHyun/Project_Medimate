@@ -2,6 +2,8 @@
 
 ## 약국,약품, 캘린더 기능을 가진 공공 웹
 
+### URL : https://port-0-medimate-client-7e6o2clhvlbv0c.sel4.cloudtype.app/main/index
+
 
 ![image](https://github.com/Choi-YoungHyun/Project_Medimate/assets/131942940/c52b2f1f-37cc-46c6-ae59-4b2613f5242a)
 
