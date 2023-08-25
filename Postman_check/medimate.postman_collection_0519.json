@@ -1,0 +1,1011 @@
+{
+	"info": {
+		"_postman_id": "a034f2b6-587d-49fe-8ddc-5f7afaccec3d",
+		"name": "medimate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27005704"
+	},
+	"item": [
+		{
+			"name": "관리자 유저",
+			"item": [
+				{
+					"name": "전체 조회",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/admin/user?page=1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"user"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "검색",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"U_NAME\":\"김\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/user?page=1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"user"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "상세보기",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"U_NAME\":\"김\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/user?page=1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"user"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "수정",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"U_ID\":\"apple\",\r\n    \"U_NAME\":\"김사과\",\r\n    \"U_EMAIL\":\"apple@apple.com\",\r\n    \"U_HP\":\"01012341234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/user/31",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"user",
+								"31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "삭제",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/user/5",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "관리자 문의사항",
+			"item": [
+				{
+					"name": "상세보기",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/qna/1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"qna",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "전체조회",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/qna?page=1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"qna"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "검색",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Q_TITLE\":\"큰\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/qna?page=1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"qna"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "수정",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Q_CONTENT\":\"문의는 시져시져\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/qna/1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"qna",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "등록",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Q_TITLE\":\"큰일났습니다.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/qna/1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"qna",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "관리자 약품",
+			"item": [
+				{
+					"name": "등록",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"M_NUM\":\"114\",\r\n    \"M_NAME\":\"연습용\",\r\n    \"M_CORP\":\"최영현\",\r\n    \"M_TYPE\":\"전문의약품\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/medicine",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"medicine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "상세보기",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/medicine/114",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"medicine",
+								"114"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "전체조회",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/medicine?page=1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"medicine"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "검색",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"M_NAME\":\"연\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/medicine?page=1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"medicine"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "수정",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"M_NAME\":\"연\",\r\n    \"M_CORP\":\"최\",\r\n    \"M_TYPE\":\"전문\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/medicine/114",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"medicine",
+								"114"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "삭제",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"M_NAME\":\"연\",\r\n    \"M_CORP\":\"최\",\r\n    \"M_TYPE\":\"전문\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/medicine/114",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"medicine",
+								"114"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "관리자 공지사항",
+			"item": [
+				{
+					"name": "등록",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"A_TITLE\": \"423211\",\r\n    \"A_DATE\": \"230301\",\r\n    \"A_CONTENT\": \"안녕하221요~~~~!!!!~~~~~~~~\",\r\n    \"U_NUM\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/announcement",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"announcement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "검색",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"A_TITLE\": \"21\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/announcement?page=1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"announcement"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "전체조회",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/admin/announcement?page=1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"announcement"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "상세보기",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "수정",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"A_TITLE\": \"수정합니다~\",\r\n    \"A_CONTENT\": \"수정한다고요\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/announcement/4",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"announcement",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "삭제",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/admin/announcement/4",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"announcement",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "관리자 약국",
+			"item": [
+				{
+					"name": "등록",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"P_NUM\":\"C1109587\",\r\n        \"P_NAME\": \"100세건강약국\",\r\n        \"P_ADDRESS\": \"서울특별시 강남구 헌릉로571길 7\",\r\n        \"P_PHONE\":\"02-445-1460\",\r\n        \"P_MON_S\": \"1000\",\r\n        \"P_MON_C\": \"2000\",\r\n        \"P_TUE_S\":\"2000\",\r\n        \"P_TUE_C\": \"1000\",\r\n        \"P_WED_S\": \"2000\",\r\n        \"P_WED_C\": \"2000\",\r\n        \"P_THU_S\": \"2000\",\r\n        \"P_THU_C\":\"2000\",\r\n        \"P_FRI_S\": \"1000\",\r\n        \"P_FRI_C\": \"2000\",\r\n        \"P_SAT_S\":\"2000\",\r\n        \"P_SAT_C\": \"2000\",\r\n        \"P_SUN_S\": \"2000\",\r\n        \"P_SUN_C\": \"1000\",\r\n        \"P_HOLI_S\":\"2000\",\r\n        \"P_HOLI_C\": \"2000\",\r\n        \"P_LATI\": \"127.101366881801\",\r\n        \"P_LONGI\": \"37.4660448664795\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/drugstore",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"drugstore"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "검색",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"P_NAME\": \"강약국\"\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/drugstore?page=1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"drugstore"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "전체조회",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/admin/drugstore?page=1",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"drugstore"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "상세보기",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/admin/drugstore/C1109587",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"drugstore",
+								"C1109587"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "수정",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"P_NAME\": \"건강약국\",\r\n        \"P_ADDRESS\": \"서울특별시 강남구 헌릉로571길 7\",\r\n        \"P_PHONE\":\"02-445-1460\",\r\n        \"P_MON_S\": \"1000\",\r\n        \"P_MON_C\": \"2000\",\r\n        \"P_TUE_S\":\"2000\",\r\n        \"P_TUE_C\": \"1000\",\r\n        \"P_WED_S\": \"2000\",\r\n        \"P_WED_C\": \"2000\",\r\n        \"P_THU_S\": \"2000\",\r\n        \"P_THU_C\":\"2000\",\r\n        \"P_FRI_S\": \"1000\",\r\n        \"P_FRI_C\": \"2000\",\r\n        \"P_SAT_S\":\"2000\",\r\n        \"P_SAT_C\": \"2000\",\r\n        \"P_SUN_S\": \"2000\",\r\n        \"P_SUN_C\": \"1000\",\r\n        \"P_HOLI_S\":\"2000\",\r\n        \"P_HOLI_C\": \"2000\",\r\n        \"P_LATI\": \"127.101366881801\",\r\n        \"P_LONGI\": \"37.4660448664795\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/admin/drugstore/C1109587",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"drugstore",
+								"C1109587"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "삭제",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/admin/drugstore/C1109587",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"admin",
+								"drugstore",
+								"C1109587"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "로그인 회원가입",
+			"item": [
+				{
+					"name": "회원가입페이지이동",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/main/join",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"main",
+								"join"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "회원가입",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"U_ID\":\"12345\", \r\n\"U_PW\":\"12345\", \r\n\"U_NAME\":\"최영현\", \r\n\"U_EMAIL\":\"abc@abc.com\", \r\n\"U_ZIP_CODE\":\"06556\", \r\n\"U_ADDRESS1\":\"서울시 서초구 방배로 43길 21\", \r\n\"U_ADDRESS2\":\"삼호아파트 3동 604호\", \r\n\"U_ID_TYPE\":\"O\", \r\n\"U_HP\":\"010-8290-3588\"\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/main/join",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"main",
+								"join"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "로그인페이지이동",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/main/login",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"main",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "로그인",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"U_ID\":\"12345\",\r\n    \"U_PW\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/main/login",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"main",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "전체조회",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"M_NAME\":\"가\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base}}/medicine?page=3",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"medicine"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
